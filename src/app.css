@@ -1,0 +1,10 @@
+@import 'tailwindcss';
+
+body {
+	font-family: 'Poppins', sans-serif;
+	@apply bg-red-50;
+}
+
+.nav-link {
+	@apply mt-3 rounded-lg bg-rose-200 p-3 font-bold text-rose-800 transition-all ease-in-out hover:bg-rose-800 hover:text-white;
+}
