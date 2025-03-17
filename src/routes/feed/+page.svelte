@@ -25,10 +25,16 @@
 	});
 </script>
 
-<div>
+<div class="flex flex-col gap-3">
 	{#if loading}
 		<h1>Loading Camera</h1>
 	{/if}
-	<!-- svelte-ignore a11y-media-has-caption -->
-	<video bind:this={videoSource} class="rounded-lg"></video>
+	<h2 class="text-3xl font-bold text-rose-800">Camera Feeds</h2>
+	<div>
+		<!-- svelte-ignore a11y-media-has-caption -->
+		<video bind:this={videoSource} class="rounded-lg"></video>
+	</div>
+	<div class="h-[300px] rounded-lg bg-rose-200"></div>
+	<div class="h-[300px] rounded-lg bg-rose-200"></div>
+	<div class="h-[300px] rounded-lg bg-rose-200"></div>
 </div>
