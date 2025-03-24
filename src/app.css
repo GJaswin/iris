@@ -8,3 +8,7 @@ body {
 .nav-link {
 	@apply mt-3 rounded-lg bg-rose-200 p-3 font-bold text-rose-800 transition-all ease-in-out hover:bg-rose-800 hover:text-white;
 }
+
+main {
+	@apply absolute top-[5rem] left-0 m-5 rounded-lg p-3 md:top-0 md:left-[30%] md:w-[66%];
+}

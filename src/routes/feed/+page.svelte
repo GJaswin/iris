@@ -1,7 +1,9 @@
 <script>
 	import { onMount } from 'svelte';
 
-	// @ts-ignore
+	/**
+	 * @type {HTMLVideoElement | null}
+	 */
 	let videoSource = null;
 	let loading = false;
 	const obtainVideoCamera = async () => {
@@ -25,16 +27,24 @@
 	});
 </script>
 
-<div class="flex flex-col gap-3">
-	{#if loading}
-		<h1>Loading Camera</h1>
-	{/if}
-	<h2 class="text-3xl font-bold text-rose-800">Camera Feeds</h2>
-	<div>
-		<!-- svelte-ignore a11y-media-has-caption -->
-		<video bind:this={videoSource} class="rounded-lg"></video>
+<head>
+	<title>Camera Feeds</title>
+</head>
+
+<main>
+	<div class="main-container">
+		<div class="flex flex-col gap-3">
+			<h2 class="text-2xl font-bold text-rose-800">Camera Feeds</h2>
+			<div>
+				{#if loading}
+					<p>Loading Camera</p>
+				{/if}
+				<!-- svelte-ignore a11y-media-has-caption -->
+				<video bind:this={videoSource} class="rounded-lg w-[100%]"></video>
+			</div>
+			<div class="h-[300px] rounded-lg bg-rose-200"></div>
+			<div class="h-[300px] rounded-lg bg-rose-200"></div>
+			<div class="h-[300px] rounded-lg bg-rose-200"></div>
+		</div>
 	</div>
-	<div class="h-[300px] rounded-lg bg-rose-200"></div>
-	<div class="h-[300px] rounded-lg bg-rose-200"></div>
-	<div class="h-[300px] rounded-lg bg-rose-200"></div>
-</div>
+</main>

@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Jaswin",
+        "time": "10:43 AM",
+        "attendance": "Present"
+    },
+    {
+        "name": "Thalha",
+        "time": "-",
+        "attendance": "Absent"
+    },
+    {
+        "name": "Mohan",
+        "time": "11:00 AM",
+        "attendance": "Present"
+    },
+    {
+        "name": "Karthi",
+        "time": "11:01 AM",
+        "attendance": "Present"
+    }
+]

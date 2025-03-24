@@ -3,10 +3,6 @@
 	let { children } = $props();
 </script>
 
-<head>
-	<title>Iris</title>
-</head>
-
 <header>
 	<nav
 		class="fixed flex w-[100%] flex-col rounded-b-lg bg-rose-100 p-3 md:h-[100%] md:max-w-[30%] md:rounded-e-lg"
@@ -32,9 +28,7 @@
 	</nav>
 </header>
 
-<main class="absolute top-[5rem] left-0 m-5 md:top-0 md:left-[30%]">
-	{@render children()}
-</main>
+{@render children()}
 
 <style lang="scss">
 	.logo {

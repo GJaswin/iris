@@ -15,5 +15,10 @@
 	faceapi.env.monkeyPatch({ Canvas, Image, ImageData });
 </script> -->
 
+<head>
+	<title>Home</title>
+</head>
 
-<div class="main-container">Content</div>
+<main>
+	<div class="main-container">Content</div>
+</main>
